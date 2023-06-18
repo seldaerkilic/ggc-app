@@ -152,7 +152,7 @@ h3 {
     align-items: center;
 }
 
-.racerContainer div {
+.racerContainer li {
     border: 2px solid grey;
     width: calc(30% - 20px);
     display: flex;
@@ -163,12 +163,12 @@ h3 {
     height: 90%;
 }
 
-.racerContainer div p {
+.racerContainer li p {
     text-align: center;
     font-size: 0.8rem;
 }
 
-.racerContainer div a {
+.racerContainer li a {
     background-color: rgb(149, 87, 164);
     color: white;
     border-radius: 10px;
@@ -257,11 +257,53 @@ button {
 
 /* Media queries for responsiveness */
 
+@media (max-width: 960px){
+    .racerContainer {
+        flex-direction: column;
+    }
 
-/* Notes:
+    .racerContainer li{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
 
-- Media queries for players section and footer
-- Carousel JS code
-- Hamburger menu
+@media (max-width: 800px){
+    .bannerSection {
+        height: 30vh;
+    }
+    }
 
-*/
+@media (max-width: 600px){
+    body{
+        font-size: 0.8rem;
+    }
+    .racerContainer{
+        width: 90%;
+    }
+    .racerContainer li {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 550px){
+.bannerSection {
+        height: 20vh;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .socials {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .bannerSection {
+        height: 15vh;
+    }
+}
