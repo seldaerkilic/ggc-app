@@ -1,0 +1,267 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* Setup snippet is used ABOVE to normalize the style */
+
+/* Global style */
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.15rem;
+    background-color: white;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* Header */
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header figure {
+    width: 30%;
+}
+
+figure img.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav {
+    min-width: 60%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.bannerSection {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 40vh;
+    
+}
+
+.bannerSection img {
+    width: 100%;
+}
+
+.carouselItem{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: 250ms ease-in-out all;
+}
+
+.hideItem{
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+
+/* Home page body */
+
+.racer {
+    width: 200px;
+    height: 170px;
+    border-radius: 100%;
+}
+
+.infoSection {
+    padding: 30px 0;
+}
+
+th {
+    border-bottom: 2px solid rgb(149, 87, 164);
+    border-right: 2px solid rgb(149, 87, 164);
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+.noStyleCell {
+    border: none;
+}
+
+.upcomingRace {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.racerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.racerContainer div {
+    border: 2px solid grey;
+    width: calc(30% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 90%;
+}
+
+.racerContainer div p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.racerContainer div a {
+    background-color: rgb(149, 87, 164);
+    color: white;
+    border-radius: 10px;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 40px 60px;
+    background-image: linear-gradient(120deg, rgb(255, 255, 255), rgb(222, 201, 228));
+    font-size: 0.6rem;
+}
+
+.footerLogo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.footerInfo {
+    line-height: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.socials a img{
+    width: 30px;
+    height: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin-top: 12px;
+}
+
+
+/* Error page */
+
+.errorSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errorMessage {
+    width: 70%;
+}
+
+.errorLogo {
+    width: 250px;
+    height: 250px;
+}
+
+button {
+    border: none;
+    background-color: rgb(149, 87, 164);
+    color: white;
+    border-radius: 10px;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* Notes:
+
+- Media queries for players section and footer
+- Carousel JS code
+- Hamburger menu
+
+*/

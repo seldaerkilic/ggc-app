@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Your Game!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/favicon.ico">
+
+    <!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <figure class="wrapper">
+            <img class="logo" src="./assets/logo.png" alt="Pick Your Game logo as purple smiling face doodle">
+        </figure>
+
+        <!-- NavBar -->
+        <nav class="wrapper">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./error.html">Games</a>
+                </li>
+                <li>
+                    <a href="./error.html">Events</a>
+                </li>
+                <li>
+                    <a href="./error.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel banner images -->
+        <ul class="bannerSection">
+            <li class="carouselItem">
+                <img src="./assets/bannerOne.png" alt="Close-up monopoli player item in car shape with two dices at the back">
+            </li>
+
+            <li class="carouselItem hideItem" id="bannerItem">
+                <img src="./assets/bannerTwo.png" alt="Three kids playing Ticket to Ride are laughing">
+            </li>
+        </ul>
+
+    <main>
+
+        <!-- Informative paragraph section -->
+        <section class="infoSection wrapper">
+            <h1>Pick Your Game!</h1>
+            <p>This website is about an imaginary board game tournement which is organized since 2019. Being an imaginary event site, the page is full of fictional references from Star Wars to Doctor Who. Still, the players section has some external links about the characters.</p>
+            <p>The whole purpose of this project is to implement basic HTML, CSS, and some JavaScript concepts to simulate a multi-page website. The MVP of the project includes a header, banner image, a table with minimum 5 rows, and a footer.</p>
+        </section>
+
+        <!-- Table section to show data -->
+        <section class="tableSection wrapper">
+            <div class="tableInfo">
+                <h2>Winners board</h2>
+                <p>Here are the winner games and the teams rated by our guests and attendees in previous years!</p>
+            </div>
+
+            <!-- Table --add more comments for data -->
+            <table class="verticalTable">
+                <tr>
+                    <th class="noStyleCell"></th>
+                    <th>Winer Game</th>
+                    <th>Winner Team</th>
+                </tr>
+                <tr>
+
+                    <th>2022</th>
+
+                    <td>Root</td>
+
+                    <td>Ents</td>
+                </tr>
+                <tr>
+                    <th>2021</th>
+                    <td>Calico</td>
+                    <td>Enterprise</td>
+                </tr>
+                <tr>
+                    <th>2020</th>
+                    <td>Wingspan</td>
+                    <td>Horcrux</td>
+                </tr>
+                <tr>
+                    <th>2019</th>
+                    <td>Chronicals of Time</td>
+                    <td>Tardis</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section for 2023 tournement info -->
+        <section class="upcomingRace wrapper">
+            <h3>This year, single players will compete under additional category. Get to know them:</h3>
+            <ul class="racerContainer">
+
+                <!-- Change divs to li -->
+
+                <div>
+                    <img class="racer" src="./assets/playerOne.jpg" alt="The Sandman close-shot with a crow on his shoulder">
+                    <p>The Sandman is a comic book character, and a Netflix show written by Neil Gaiman. The character is inpired by the European myth who controls dreams and encourages people.</p>
+                    <a href="https://en.wikipedia.org/wiki/The_Sandman_(comic_book)">More info</a>
+                </div>
+    
+                <div>
+                    <img class="racer" src="./assets/playerTwo.png" alt="Daria Morgendorffer with her famous facial impression">
+                    <p>Daria Morgendorffer is a fictional character from the MTV animated series 'Daria'. She was voiced by Tracy Grandstaff, known as one of the most inspiring 'anti-' characters.</p>
+                    <a href="https://en.wikipedia.org/wiki/Daria_Morgendorffer">More info</a>
+                </div>
+    
+                <div>
+                    <img class="racer" src="./assets/playerThree.jpg" alt="R2D2 a robot from Star Wars movies -the one who is not boring-">
+                    <p>R2-D2 is a fictional robot character in the Star Wars franchise created by George Lucas. Some of R2D2's famous friends are C-3PO, Anakin Skywalker, Leia Organa, and Obi-Wan Kenobi.</p>
+                    <a href="https://en.wikipedia.org/wiki/R2-D2">More info</a>
+                </div>
+            </ul>
+        </section>
+
+    </main>
+
+<!-- Footer section -->
+    <footer>
+        <div class="footerInfo wrapper">
+            <img class="footerLogo" src="./assets/logo.png" alt="Pick Your Game logo as purple smiling face doodle">
+            <div>
+                <p>1234 Avenue, Toronto ON</p>
+                <p>+1 123 456 7890</p>
+                <a href="mailto:info@pickyourgame.com">info@pickyourgame.com</a>
+            </div>
+        </div>
+
+        <div class="footerLinks wrapper">
+            <a href="./index.html">Home</a>
+            <a href="./error.html">Games</a>
+            <a href="./error.html">Events</a>
+            <a href="./error.html">Contact</a>
+        </div>
+
+        <div class="socials wrapper">
+            <a href="https://www.facebook.com/">
+                <img src="./assets/gray-fb-icon.png" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="./assets/gray-ig-icon.png" alt="Instagram icon">
+            </a>
+            <a href="https://twitter.com/">
+                <img src="./assets/gray-tw-icon.png" alt="Twitter icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
