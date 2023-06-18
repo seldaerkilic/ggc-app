@@ -12,12 +12,19 @@ function toggleClass(){
 
 setInterval(toggleClass, 3000);
 
-// Media queries
 
-// Netlify and GitHub
 // Test the site
 
 // Hamburger menu for media queries
 
+const bar = document.querySelector('.menu');
+const menu = document.querySelector('.wideMenu');
+const background = document.querySelector('.background');
 
+
+bar.addEventListener('click', () => {
+    bar.classList.toggle('open')
+    menu.classList.toggle('navList')
+    background.classList.toggle('activeBack')
+})
 

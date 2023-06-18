@@ -66,16 +66,18 @@ figure img.logo {
     max-height: 100px;
 }
 
-nav {
+nav.wrapper {
     min-width: 60%;
 }
 
-nav ul {
+ul.wideMenu {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
 }
+
 
 .bannerSection {
     display: block;
@@ -274,6 +276,12 @@ button {
     }
     }
 
+@media (max-width: 700px){
+    nav.wideMenu {
+        min-width: 80%;
+    }
+}
+
 @media (max-width: 600px){
     body{
         font-size: 0.8rem;
@@ -300,6 +308,103 @@ button {
         flex-direction: row;
         justify-content: center;
     }
+}
+
+@media (max-width: 500px){
+    /* Hamburger menu */
+    nav.wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+    }
+    .menu {
+            position: absolute;
+            display: block;
+            right: 20px;
+            padding: 20px;
+            background-color: white;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .menu .bar {
+            width: 25px;
+            height: 2px;
+            background-color: rgb(149, 87, 164);
+            margin: 3px 0;
+            transition: 0.4s;
+        }
+    
+        .menu.open {
+            right: -45px;
+            position: relative;
+        }
+    
+        .menu.open .bar-1 {
+            transform: rotate(40deg);
+        }
+    
+        .menu.open .bar-2 {
+            opacity: 0;
+        }
+    
+        .menu.open .bar-3 {
+            transform: rotate(-40deg);
+            margin-top: -10px;
+        }
+    
+        .wideMenu {
+            height: 0;
+            overflow: hidden;
+    
+        }
+        .wideMenu li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMenu li a {
+            color: black;
+        }
+
+        .wideMenu li a:hover{
+            color: white;
+        }
+    
+        .wideMenu.navList {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: flex-end;
+            transition: height 0.4s;
+            position: absolute;
+            top: 115px;
+            right: 0px;
+            z-index: 2;
+            margin-top: 30px;
+    
+        }
+    
+        .background {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+        }
+    
+        .background.activeBack {
+            background-color: rgb(149, 87, 164);
+            opacity: 60%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 300px;
+            z-index: 1;
+            border-radius: 10px 0 0 10px;
+        }
+
+
 }
 
 @media (max-width: 350px) {
