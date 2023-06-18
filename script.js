@@ -19,8 +19,5 @@ setInterval(toggleClass, 3000);
 
 // Hamburger menu for media queries
 
-// Contact page with fromspree
-
-
 
 
