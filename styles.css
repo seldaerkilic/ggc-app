@@ -78,6 +78,10 @@ ul.wideMenu {
     padding: 0 50px;
 }
 
+ul.wideMenu li a {
+    color: black;
+}
+
 ul.wideMenu li a:hover {
     text-shadow: rgb(255, 204, 0) 1px 0 10px;
 }
