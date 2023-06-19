@@ -78,6 +78,9 @@ ul.wideMenu {
     padding: 0 50px;
 }
 
+ul.wideMenu li a:hover {
+    text-shadow: rgb(255, 204, 0) 1px 0 10px;
+}
 
 .bannerSection {
     display: block;
@@ -326,6 +329,8 @@ button {
             background-color: white;
             cursor: pointer;
             z-index: 2;
+            border: 1px solid rgb(149, 87, 164);
+            border-radius: 10px;
         }
         .menu .bar {
             width: 25px;
@@ -364,11 +369,11 @@ button {
         }
 
         .wideMenu li a {
-            color: black;
+            color: white;
         }
 
         .wideMenu li a:hover{
-            color: white;
+            text-shadow: rgb(255, 204, 0) 1px 0 10px;
         }
     
         .wideMenu.navList {

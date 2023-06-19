@@ -13,9 +13,10 @@ function toggleClass(){
 setInterval(toggleClass, 3000);
 
 
-// Test the site
+// Hamburger menu
 
-// Hamburger menu for media queries
+// keep the menu bar, menu list and its background in a variable
+// add an event listener to the bar, click event will expand the menu
 
 const bar = document.querySelector('.menu');
 const menu = document.querySelector('.wideMenu');
